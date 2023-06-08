@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adilush deluxe - Lyx och Komfort i Harmoni: Ditt Hem Hemifrån">
+    <title>Adilush Deluxe</title>
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+
+<body>
+    <div class="container">
+        <header>
+
+            <img class="header-logo" src="banner1.webp" alt="">
+        </header>
+        <nav>
+            <a href="index.html">Hem</a>
+            <a href="hitta-oss.html">Hitta oss</a>
+            <a class="active" href="boka.html">Boka</a>
+            <a href="menu.html">Meny</a>
+
+        </nav>
+        <main>
+            <h1>Boka Rum</h1>
+            <article>
+                <h2 class="boka-text">Boka här</h2>
+                <form action="thanks.html">
+                    <fieldset>
+
+                        <legend>Uppgifter</legend>
+
+                        <label for="fname">Förnamn</label>
+                        <input id="fname" type="text" required>
+
+                        <label for="lname">Efternamn</label>
+                        <input id="lname" type="text" required>
+
+                        <label for="email">Email</label>
+                        <input id="email" required>
+
+                        <label for="mobile">Mobile nummmer</label>
+                        <input id="mobile" required>
+
+                        <label for="arrival-time">Ankomst</label>
+                        <input type="datetime-local" id="arrival-time" name="meeting-time" min="2022-06-22T00:00"
+                            max="2024-12-14T00:00">
+                        <label for="departure-time">Avgång</label>
+                        <input type="datetime-local" id="departure-time" name="meeting-time" min="2022-06-22T00:00"
+                            max="2024-12-14T00:00">
+
+
+                
+
+                        <label>Antal vuxnaa
+                            <select name="adults">
+                                <option value="">(välj)</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </label>
+
+                        <label>Antal barn
+                            <select name="children">
+                                <option value="">(Välj)</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </label>
+
+                        <label class="rumstyp">Välj rumstyp
+                            <select name="room-type">
+                                <option value="">(Välj)</option>
+                                <option value="double-room">Dubbelrum</option>
+                                <option value="king-room">Kingrum</option>
+                                <option value="luxury">Lyx</option>
+                            </select>
+                        </label>
+
+                        <button type="submit">Boka</button>
+                    </fieldset>
+                </form>
+            </article>
+            <article>
+                <h2 class=" boka-text">Dubbelrum medium</h2>
+                <img class="img-front" src="rum.webp" alt="" width="600" height="450">
+            </article>
+        </main>
+        <footer>
+            <p>Las Vegas | Queen Street | 412 81 Beach Town | 018 278 998 </p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
